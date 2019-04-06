@@ -1,0 +1,107 @@
+@import "colorui/main.scss";
+@import "colorui/icon.scss";
+
+.scrollPage {
+  height: 100vh;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 40px 0px;
+  justify-content: space-between;
+}
+
+.nav-li {
+  padding: 30px;
+  border-radius: 12px;
+  width: 45%;
+  margin: 0 2.5% 40px;
+  background-image: url(https://image.weilanwl.com/color2.0/cardBg.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-li::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: inherit;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: -10%;
+  border-radius: 10px;
+  opacity: 0.2;
+  transform: scale(0.9, 0.9);
+}
+
+.nav-li.cur {
+  color: #fff;
+  background: rgb(94, 185, 94);
+  box-shadow: 4px 4px 6px rgba(94, 185, 94, 0.4);
+}
+
+.nav-title {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.nav-title::first-letter {
+  font-size: 40px;
+  margin-right: 4px;
+}
+
+.nav-name {
+  font-size: 28px;
+  text-transform: Capitalize;
+  margin-top: 20px;
+  position: relative;
+}
+
+.nav-name::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 6px;
+  background: #fff;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
+}
+
+.nav-name::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 2px;
+  background: #fff;
+  bottom: 0;
+  right: 40px;
+  opacity: 0.3;
+}
+
+.nav-name::first-letter {
+  font-weight: bold;
+  font-size: 36px;
+  margin-right: 2px;
+}
+
+.nav-li text {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 52px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.text-light {
+  font-weight: 300;
+}
